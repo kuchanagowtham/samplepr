@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<title></title>
+	
+</head>
+<body>
+<div>
+	<form method="post" action="{%url 'savedata'%}">
+		{% csrf_token %}
+		<p>name</p>
+		<p>{{forms.name}}</p>
+		<p>user Name</p>
+		<p>{{forms.username}}</p>
+		<p>password</p>
+		<p>{{forms.password}}</p>
+		<p>mobile</p>
+		<p>{{forms.mobile}}</p>
+		<p>email</p>
+		<p>{{forms.email}}</p>
+		<p>adress</p>
+		<p>{{forms.adress}}</p>
+		<button>send</button>
+	</form>
+</div>
+</body>
+</html>
